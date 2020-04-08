@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B140393A243DAC96007B045E /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1403939243DAC96007B045E /* SwitchViewController.swift */; };
+		B140393C243DACA6007B045E /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B140393B243DACA6007B045E /* SliderViewController.swift */; };
+		B140393E243DACB5007B045E /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B140393D243DACB5007B045E /* PickerViewController.swift */; };
 		B1DF930C243DA8FA002D1397 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DF930B243DA8FA002D1397 /* AppDelegate.swift */; };
 		B1DF930E243DA8FA002D1397 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DF930D243DA8FA002D1397 /* SceneDelegate.swift */; };
 		B1DF9310243DA8FA002D1397 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DF930F243DA8FA002D1397 /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B1403939243DAC96007B045E /* SwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
+		B140393B243DACA6007B045E /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
+		B140393D243DACB5007B045E /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		B1DF9308243DA8FA002D1397 /* MultipleEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultipleEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1DF930B243DA8FA002D1397 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1DF930D243DA8FA002D1397 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +66,9 @@
 				B1DF930D243DA8FA002D1397 /* SceneDelegate.swift */,
 				B1DF930F243DA8FA002D1397 /* ViewController.swift */,
 				B1DF9311243DA8FA002D1397 /* Main.storyboard */,
+				B1403939243DAC96007B045E /* SwitchViewController.swift */,
+				B140393B243DACA6007B045E /* SliderViewController.swift */,
+				B140393D243DACB5007B045E /* PickerViewController.swift */,
 				B1DF9314243DA8FB002D1397 /* Assets.xcassets */,
 				B1DF9316243DA8FB002D1397 /* LaunchScreen.storyboard */,
 				B1DF9319243DA8FB002D1397 /* Info.plist */,
@@ -138,8 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B140393E243DACB5007B045E /* PickerViewController.swift in Sources */,
 				B1DF9310243DA8FA002D1397 /* ViewController.swift in Sources */,
+				B140393C243DACA6007B045E /* SliderViewController.swift in Sources */,
 				B1DF930C243DA8FA002D1397 /* AppDelegate.swift in Sources */,
+				B140393A243DAC96007B045E /* SwitchViewController.swift in Sources */,
 				B1DF930E243DA8FA002D1397 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
