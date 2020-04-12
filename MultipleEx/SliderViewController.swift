@@ -15,10 +15,16 @@ class SliderViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    let step: Float = 1
+
+    
     @IBOutlet weak var sliderVal: UILabel!
     @IBOutlet weak var mySliderRef: UISlider!
     
     @IBAction func mySlider(_ sender: UISlider) {
+        let roundedValue = round(sender.value / step) * step
+        sender.value = roundedValue
         global.sliderVar = Int(sender.value)
         sliderVal.text = "\(global.sliderVar)"
     }

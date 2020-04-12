@@ -22,7 +22,7 @@ class SwitchViewController: UIViewController {
         if sender.isOn {
                  global.switchVar = "on"
               }
-              else {
+        else {
                  global.switchVar = "off"
               }
         switchVal.text = global.switchVar
@@ -30,15 +30,15 @@ class SwitchViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool){
         switchVal.text = "\(global.switchVar)"
-        if global.switchVar == "" {
-            switchVal.text = "Switch Value"
+        if global.switchVar == "off" {
+            mySwitchRef.setOn(false, animated: true)
         }
         else if global.switchVar == "on"
         {
-            mySwitchRef.isOn = true
+            mySwitchRef.setOn(true, animated: true)
         }
         else {
-            mySwitchRef.isOn = false
+            switchVal.text = "Switch Value"
         }
     }
 
