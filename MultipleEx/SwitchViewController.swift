@@ -12,17 +12,33 @@ class SwitchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //global.switchVar = "off"
         // Do any additional setup after loading the view.
     }
-    @IBOutlet weak var navView: UIView!
-     
-    @IBAction func clickMenu(_ sender: Any) {
-        if(navView.isHidden) {
-            navView.isHidden = false
+    @IBOutlet weak var switchVal: UILabel!
+    
+    @IBOutlet weak var mySwitchRef: UISwitch!
+    @IBAction func mySwitch(_ sender: UISwitch) {
+        if sender.isOn {
+                 global.switchVar = "on"
+              }
+              else {
+                 global.switchVar = "off"
+              }
+        switchVal.text = global.switchVar
+    }
+    
+    override func viewWillAppear(_ animated: Bool){
+        switchVal.text = "\(global.switchVar)"
+        if global.switchVar == "" {
+            switchVal.text = "Switch Value"
+        }
+        else if global.switchVar == "on"
+        {
+            mySwitchRef.isOn = true
         }
         else {
-            navView.isHidden = true
+            mySwitchRef.isOn = false
         }
     }
 

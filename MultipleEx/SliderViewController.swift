@@ -15,14 +15,22 @@ class SliderViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    @IBOutlet weak var navView: UIView!
-     
-    @IBAction func clickMenu(_ sender: Any) {
-        if(navView.isHidden) {
-            navView.isHidden = false
+    @IBOutlet weak var sliderVal: UILabel!
+    @IBOutlet weak var mySliderRef: UISlider!
+    
+    @IBAction func mySlider(_ sender: UISlider) {
+        global.sliderVar = Int(sender.value)
+        sliderVal.text = "\(global.sliderVar)"
+    }
+    
+    override func viewWillAppear(_ animated: Bool){
+        sliderVal.text = "\(global.sliderVar)"
+        if global.sliderVar == -1 {
+            sliderVal.text = "Slider Value"
         }
-        else {
-            navView.isHidden = true
+        else
+        {
+            mySliderRef.setValue(Float(global.sliderVar), animated:true)
         }
     }
 
