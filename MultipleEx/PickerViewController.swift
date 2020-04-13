@@ -42,16 +42,24 @@ class PickerViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
        }
     
     override func viewWillAppear(_ animated: Bool){
-        pickerVal.text = "\(global.pickerVar)"
-        if global.pickerVar == "item1" {
+        pickerVal.text = "Selection: \(global.pickerVar)"
+        
+        if global.pickerVar == "Item1" {
+            picker.selectRow(0, inComponent: 0, animated: true)
+        }
+        else if global.pickerVar == "Item2" {
             picker.selectRow(1, inComponent: 0, animated: true)
         }
-        else if global.pickerVar == "item2" {
+        else if global.pickerVar == "Item3" {
             picker.selectRow(2, inComponent: 0, animated: true)
+        }
+        else if global.pickerVar == "Item4" {
+            picker.selectRow(3, inComponent: 0, animated: true)
         }
         else
         {
-            pickerVal.text = ""
+            global.pickerVar = "Item1"
+            pickerVal.text = "Selection: Item1"
         }
     }
 
